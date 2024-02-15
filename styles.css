@@ -1,0 +1,413 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: darkgrey;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center; 
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+   
+}
+
+footer {
+    background: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Index Page Styling */
+
+.main-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.content {
+    display: flex;
+    align-items: center; 
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px; 
+    margin-right: 20px; 
+}
+
+.text-content {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .profile-image {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+/* ...............*/
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.work-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .work-container {
+        width: 90%; 
+    }
+}
+
+.project {
+    
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project .images-container {
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.project img {
+    width: 500px; 
+    height: 300px; 
+    
+}
+
+.project .video-container {
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.project iframe {
+    width: 500px; 
+    height: 300px; 
+    
+}
+
+main h2 {
+    font-size: 28px; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 767px) {
+    .project .images-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .project img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .project .video-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .project iframe {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+}
+
+/* Dark Theme */
+.dark {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark header {
+    background-color: #222;
+}
+.dark footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark nav ul li a {
+    color: #fff;
+}
+
+
+#theme-toggle button {
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle button:hover {
+    background-color:darkcyan; 
+}
+
+
+
+
+.contact-page main {
+    padding-top: 50px; 
+}
+
+.contact-page h2 {
+    font-size: 36px; 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.contact-page p {
+    font-size: 18px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.contact-page .contact-icons {
+    display: flex;
+    justify-content: center; 
+}
+
+.contact-page .contact-icons a {
+    margin: 0 15px; 
+}
+
+.contact-page .contact-icons img {
+    width: 40px; 
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.contact-page .contact-icons img:hover {
+    opacity: 1;
+}
+
+.contact-page a[href^="mailto"] {
+    color: deepskyblue; 
+}
+
+
+.contact-page a[href^="tel"] {
+    color: deepskyblue; 
+}
+
+.work-experience {
+    background-image: url('canvas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .work-experience {
+        background-size: contain; 
+        
+    }
+}
+
+
+.work-experience h2 {
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.event-icon {
+    margin-right: 20px;
+}
+
+.event-icon img {
+    width: 60px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    color: darkblue;
+    font-size: 18px;
+    margin: 0;
+}
+
+.dark .event-details ul li {
+    color: black; 
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .work-experience {
+        padding: 20px;
+    }
+
+    .work-experience h2 {
+        font-size: 28px;
+    }
+
+    .timeline {
+        display: block;
+    }
+
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .event-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .event-icon img {
+        width: 40px;
+    }
+
+    .event-details {
+        width: 100%;
+    }
+
+    .event-details h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .event-details p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .event-details ul {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
